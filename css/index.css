@@ -988,3 +988,34 @@ blockquote p {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(122,130,136,0.4);
 }
+
+
+/* Profile and publication updates, October 2026. */
+html { scroll-behavior: smooth; }
+.page article h1 { color: #336699; scroll-margin-top: 2rem; }
+.page article h2 { font-size: 2.5rem; color: #336699; scroll-margin-top: 2rem; }
+.page article h3 { font-size: 2rem; margin-bottom: 1rem; }
+.page article .publication-note, .page article .publication-jump { font-size: 1.65rem; }
+.publication-list { padding-left: 2.4rem; }
+.publication-list > li { padding-left: .4rem; margin-bottom: 2rem; }
+.page article .paper-title { color: #336699; font-weight: 600; margin: 0 0 .3rem; }
+.page article .paper-authors, .page article .paper-citation { margin: .2rem 0; font-size: 1.65rem; line-height: 1.45; }
+.page article .paper-citation a, .page article .publication-jump a { color: #336699; }
+.page article .last-updated { color: #6a7177; font-size: 1.4rem; margin-top: 3rem; }
+.news-list li { margin-bottom: .5rem; }
+.cd-top { text-decoration: none; }
+.nav_items a { white-space: nowrap; }
+.side-card { opacity: 1; }
+@media (min-width: 34em) and (max-width: 75em) {
+  .page { width: calc(100% - 195px); }
+  .side-card { width: 165px; margin-right: 15px; }
+  .page article { padding-left: 1.8rem; padding-right: 1.2rem; }
+}
+@media (max-width: 34em) {
+  .author-bio { line-height: 1.4; }
+  .page article h1 { font-size: 2.7rem; }
+  .page article h2 { font-size: 2.3rem; }
+  .publication-list { padding-left: 2rem; }
+  .page article .paper-authors, .page article .paper-citation { font-size: 1.6rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
